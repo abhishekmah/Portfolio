@@ -18,19 +18,20 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="abhishek.png" alt="" />
+          <img src="abhishek.png" alt=""/>
         </div>
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
+          <h2>Hi, My Name Is </h2>
+          {/* <img src="wave.gif" height="70px" width="90px"/> */}
           <h1>Abhishek Mahato</h1>
           <h3>
              <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
+          {/* <img src="" height="70px" width="190px"/> */}
         </a>
       </div>
     </div>

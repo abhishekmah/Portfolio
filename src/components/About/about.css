@@ -1,0 +1,28 @@
+.about{
+    width: 90%;
+    background-color: white;
+}
+
+.aboutMain{
+    width: 90%;
+    
+    margin: auto;
+    display: flex;
+    margin-top: 70px;
+    /* font-size: 15px; */
+}
+.aboutLeft{
+    width: 40%;
+}
+.aboutLeft>img{
+    width: 80%;
+    border-radius: 15px;
+}
+.aboutRight{
+    height: 400px;
+    width: 50%;
+    color: black;
+}
+.aboutRight>p{
+    font-size: 18px;
+}

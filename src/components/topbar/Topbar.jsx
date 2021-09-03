@@ -1,14 +1,13 @@
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
+import { FaDownload } from "react-icons/fa"
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">
-            genius.
-          </a>
+          <div className="logoImg"><img src="abhiLogo.png" /></div>
           <div className="itemContainer">
             <Person className="icon" />
             <span>+91 7098822766</span>
@@ -19,6 +18,13 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
         </div>
         <div className="right">
+          <div className="itemContainer1"><a href="#intro">HOME</a></div>
+          <div className="itemContainer1"><a href="#about">ABOUT</a></div>
+          <div className="itemContainer1"><a href="">SKILL</a></div>
+          <div className="itemContainer1"><a href="#project">PROJECT</a></div>
+          <div className="itemContainer1"><a href="#contact">CONTACT</a></div>
+          <div className="itemContainer1" id="lastDiv"><a href="" id="last">RESUME <FaDownload style={{marginLeft: 10, color: "#18d26e"}}/></a></div>
+          
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
