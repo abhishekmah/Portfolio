@@ -13,6 +13,7 @@
       &::-webkit-scrollbar{
           display: none;
       }
+      overflow-x: hidden;
 
       > *{
           width: 100vw;

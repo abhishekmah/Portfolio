@@ -13,9 +13,9 @@ export default function Contact() {
   };
   return (
     <div id="contact">
-     <br />
-     <br />
-     <br />
+     {/* <br />
+     <br /> */}
+     {/* <br /> */}
      <h1 style={{textAlign: "center", color: "white"}}>Contact Me</h1>
      <hr style={{width: 150, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
       <div className="contact">
@@ -58,6 +58,8 @@ export default function Contact() {
         </form>
       </div>
       </div>
+      <br />
+      <br />
       <br />
       <div className="footer">
         <p style={{marginTop: 5}}>Created By <span>Abhishek</span> | © 2021 All rights reserved</p>

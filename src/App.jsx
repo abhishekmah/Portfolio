@@ -2,7 +2,7 @@ import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro"
 import About from "./components/About/About"
 // import Portfolio from "./components/portfolio/Portfolio"
-import Works from "./components/works/Works"
+import Skill from "./components/Skills/Skill"
 import Project from "./components/Project/Project"
 import Contact from "./components/contact/Contact"
 import "./App.scss"
@@ -19,8 +19,8 @@ function App() {
        <Intro/>
        <About/>
        {/* <Portfolio/> */}
-       <Works/>
        <Project/>
+       <Skill/>
        <Contact/>
      </div>
     </div>

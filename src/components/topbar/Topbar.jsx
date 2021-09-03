@@ -20,8 +20,8 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <div className="right">
           <div className="itemContainer1"><a href="#intro">HOME</a></div>
           <div className="itemContainer1"><a href="#about">ABOUT</a></div>
-          <div className="itemContainer1"><a href="">SKILL</a></div>
-          <div className="itemContainer1"><a href="#project">PROJECT</a></div>
+          <div className="itemContainer1"><a href="#Project">PROJECT</a></div>
+          <div className="itemContainer1"><a href="#skill">SKILL</a></div>
           <div className="itemContainer1"><a href="#contact">CONTACT</a></div>
           <div className="itemContainer1" id="lastDiv"><a href="" id="last">RESUME <FaDownload style={{marginLeft: 10, color: "#18d26e"}}/></a></div>
           

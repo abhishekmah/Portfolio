@@ -1,67 +1,73 @@
-import "./project.scss";
 
-export default function Testimonials() {
+import { useState } from "react";
+import "./project.scss";
+import Carousel from "react-elastic-carousel";
+import { v4 as uuidv4 } from 'uuid';
+
+export default function Project() {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
-      id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
-      img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/twitter.png",
+      id: "1",
+      icon: "./assets/mobile.png",
+      title: "Web Design",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      img:
+        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
     },
     {
-      id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
-      img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/youtube.png",
+      id: "2",
+      icon: "./assets/globe.png",
+      title: "Mobile Application",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
-      featured: true,
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img:
+        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     },
     {
-      id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
-      img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/linkedin.png",
+      id: "3",
+      icon: "./assets/writing.png",
+      title: "Branding",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img:
+        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     },
   ];
+
+  
   return (
-    <div className="project" id="project">
-      <br />
-      <br />
+    <div className="Project" id="Project">
+      
       <h1>My Projects</h1>
       <hr style={{width: 180, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
-      <div className="container">
+        <Carousel enableAutoPlay autoPlaySpeed={1500}>
+          
         {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"}>
-            <div className="top">
-              <img src="assets/right-arrow.png" className="left" alt="" />
-              <img
-                className="user"
-                src={d.img}
-                alt=""
-              />
-              <img className="right" src={d.icon} alt="" />
-            </div>
-            <div className="center">
-              {d.desc}
-            </div>
-            <div className="bottom">
-              <h3>{d.name}</h3>
-              <h4>{d.title}</h4>
+          <div className="container">
+            <div className="item">
+              <div className="left">
+                <div className="leftContainer">
+                  <div className="imgContainer">
+                    <img src={d.icon} alt="" />
+                  </div>
+                  <h2>{d.title}</h2>
+                  <p>{d.desc}</p>
+                  <span>Projects</span>
+                </div>
+              </div>
+              <div className="right">
+                <img
+                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         ))}
-      </div>
+        </Carousel>
+      
     </div>
   );
 }
