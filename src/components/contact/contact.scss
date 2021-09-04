@@ -29,14 +29,14 @@
   }
 
   .left {
-    flex: 1;
+    flex: 2;
     overflow: hidden;
     color: white;
     
     .contactMain{
       display: flex;
       justify-content: space-between;
-      margin-left: 70px;
+      margin-left: 100px;
 
     }
     p{

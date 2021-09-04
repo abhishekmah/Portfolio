@@ -1,73 +1,157 @@
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./project.scss";
-import Carousel from "react-elastic-carousel";
+import Slider from 'infinite-react-carousel';
 import { v4 as uuidv4 } from 'uuid';
 
+
 export default function Project() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
-      title: "Web Design",
+      icon: "hotelL.png",
+      linkSite: "https://hotelsclone.netlify.app",
+      linkGithub: "https://github.com/abhishekmah/Project-Hotels.com",
+      linkBlog: "https://medium.com/@mahatoabhishek123/hotels-com-a-cloned-version-57165d6eef3f",
+      title: "Hotels.com",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "Hotels.com is a leading provider of hotel accommodation worldwide, offering booking services through localized websites.",
       img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "hotel.png",
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
-      title: "Mobile Application",
+      icon: "angelL.png",
+      linkSite: "https://projectangel.netlify.app",
+      linkGithub: "https://github.com/vshubhams/project-angel",
+      linkBlog: "https://medium.com/@mahatoabhishek123/a-cloned-version-of-angel-co-d7718733313c",
+      title: "AngelList",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "AngelList is a U.S. website for startups, angel investors, and job-seekers looking to work at startups.",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "angel.png",
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
+      icon: "myglamm-logo.png",
+      linkSite: "https://myglammclone.netlify.app",
+      linkGithub: "https://github.com/tauseef-stack/myGlamm",
+      linkBlog: "",
+      title: "My Glamm",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "MyGlamm is a direct-to-consumer beauty brand that offers an online beauty products marketplace.",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "glamm.png",
     },
+    {
+      id: "1",
+      icon: "hotelL.png",
+      linkSite: "https://hotelsclone.netlify.app",
+      linkGithub: "https://github.com/abhishekmah/Project-Hotels.com",
+      linkBlog: "https://medium.com/@mahatoabhishek123/hotels-com-a-cloned-version-57165d6eef3f",
+      title: "Hotels.com",
+      desc:
+        "Hotels.com is a leading provider of hotel accommodation worldwide, offering booking services through localized websites.",
+      img:
+        "hotel.png",
+    },
+    {
+      id: "2",
+      icon: "angelL.png",
+      linkSite: "https://projectangel.netlify.app",
+      linkGithub: "https://github.com/vshubhams/project-angel",
+      linkBlog: "https://medium.com/@mahatoabhishek123/a-cloned-version-of-angel-co-d7718733313c",
+      title: "AngelList",
+      desc:
+        "AngelList is a U.S. website for startups, angel investors, and job-seekers looking to work at startups.",
+      img:
+        "angel.png",
+    },
+    {
+      id: "3",
+      icon: "myglamm-logo.png",
+      linkSite: "https://myglammclone.netlify.app",
+      linkGithub: "https://github.com/tauseef-stack/myGlamm",
+      linkBlog: "",
+      title: "My Glamm",
+      desc:
+        "MyGlamm is a direct-to-consumer beauty brand that offers an online beauty products marketplace.",
+      img:
+        "glamm.png",
+    },
+    {
+      id: "1",
+      icon: "hotelL.png",
+      linkSite: "https://hotelsclone.netlify.app",
+      linkGithub: "https://github.com/abhishekmah/Project-Hotels.com",
+      linkBlog: "https://medium.com/@mahatoabhishek123/hotels-com-a-cloned-version-57165d6eef3f",
+      title: "Hotels.com",
+      desc:
+        "Hotels.com is a leading provider of hotel accommodation worldwide, offering booking services through localized websites.",
+      img:
+        "hotel.png",
+    },
+    {
+      id: "2",
+      icon: "angelL.png",
+      linkSite: "https://projectangel.netlify.app",
+      linkGithub: "https://github.com/vshubhams/project-angel",
+      linkBlog: "https://medium.com/@mahatoabhishek123/a-cloned-version-of-angel-co-d7718733313c",
+      title: "AngelList",
+      desc:
+        "AngelList is a U.S. website for startups, angel investors, and job-seekers looking to work at startups.",
+      img:
+        "angel.png",
+    },
+    {
+      id: "3",
+      icon: "myglamm-logo.png",
+      linkSite: "https://myglammclone.netlify.app",
+      linkGithub: "https://github.com/tauseef-stack/myGlamm",
+      linkBlog: "",
+      title: "My Glamm",
+      desc:
+        "MyGlamm is a direct-to-consumer beauty brand that offers an online beauty products marketplace.",
+      img:
+        "glamm.png",
+    },
+
+    
   ];
 
-  
   return (
     <div className="Project" id="Project">
       
       <h1>My Projects</h1>
       <hr style={{width: 180, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
-        <Carousel enableAutoPlay autoPlaySpeed={1500}>
-          
+
+      <Slider autoplay={true} slidesToShow={2} centerMode={true} autoplayScroll={1} centerPadding={-70} arrows={false}>
         {data.map((d) => (
-          <div className="container">
+          <div key={uuidv4()} className="container">
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
                     <img src={d.icon} alt="" />
                   </div>
-                  <h2>{d.title}</h2>
+                  <h2 style={{color: "crimson"}}>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <div className="button">
+                  <a href= {d.linkBlog} style=
+                  {{textDecoration: "none", color: "white"}}><button>Blog</button></a>
+                  <a href= {d.linkGithub} style=
+                  {{textDecoration: "none", color: "white"}}><button style={{marginLeft: 10}}>Github</button></a>
+                  </div>
                 </div>
               </div>
               <div className="right">
-                <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
-                  alt=""
-                />
+                <a href={d.linkSite}><div><img src={d.img} alt=""/></div></a>
               </div>
             </div>
           </div>
-        ))}
-        </Carousel>
-      
-    </div>
+           ))}
+        </Slider>
+    </div>   
   );
 }

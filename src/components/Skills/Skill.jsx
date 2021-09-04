@@ -1,4 +1,5 @@
 import "./skill.scss";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Skill() {
   const data = [
@@ -41,7 +42,7 @@ export default function Skill() {
       <hr style={{width: 100, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
       <div className="container">
         {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"}>
+          <div key={uuidv4()} className={d.featured ? "card featured" : "card"}>
             <div className="top">
               <img src="assets/right-arrow.png" className="left" alt="" />
               <img
