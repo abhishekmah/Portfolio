@@ -1,6 +1,7 @@
 import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import { GrLinkedin } from "react-icons/gr";
 
 export default function Intro() {
   const textRef = useRef();
@@ -29,10 +30,12 @@ export default function Intro() {
           <h3>
              <span ref={textRef}></span>
           </h3>
+          <div className="contact">
+            <a href=""><GrLinkedin /></a>
+            <a href=""><img src="" /></a>
+            <a href=""><img src="" /></a>
+          </div>
         </div>
-        <a href="#portfolio">
-          {/* <img src="" height="70px" width="190px"/> */}
-        </a>
       </div>
     </div>
   );

@@ -124,6 +124,7 @@ export default function Project() {
     <div className="Project" id="Project">
       <br />
       <br />
+      <br />
       <h1>My Projects</h1>
       <hr style={{width: 180, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
 
