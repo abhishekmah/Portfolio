@@ -102,7 +102,6 @@ export default function Skill() {
               </div>
               ))}
             </div>
- 
           </div>
         ))}
       </div>

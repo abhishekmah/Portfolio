@@ -26,7 +26,7 @@ export default function Contact() {
         <br />
         <br />
         <div className="contactMain">
-        <div>
+        <div className="div1">
         <FaHome className="icon1" style={{width:"80px" ,height:"25px",marginLeft: "-20px",color: " #18d26e"}}/>
           <h1>Location</h1>
           <p>Jamshedpur,Jharkhand</p>
