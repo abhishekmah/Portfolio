@@ -26,6 +26,9 @@
         transform: scale(1.1);
     }
     
+    @include mobile {
+      flex-direction: column;
+    }
       .item {
         width: 700px;
         height: 100%;

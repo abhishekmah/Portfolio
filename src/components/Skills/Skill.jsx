@@ -87,12 +87,12 @@ export default function Skill() {
     <div className="skill" id="skill">
      
       <h1>Skills</h1>
-      <hr style={{width: 100, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
+      <hr className="hr" />
       <div className="container">
         {data.map((d) => (
           <div key={uuidv4()} className="card">
             <h1>{d.title}</h1>
-            <hr style={{width: 120, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
+            <hr className="hr1"/>
             
             <div className="types">
             {d.img.map((item) => (

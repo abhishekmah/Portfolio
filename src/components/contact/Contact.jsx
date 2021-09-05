@@ -27,17 +27,17 @@ export default function Contact() {
         <br />
         <div className="contactMain">
         <div>
-          <FaHome style={{width:"80px" ,height:"25px",marginLeft: "-20px",color: " #18d26e"}}/>
+        <FaHome className="icon1" style={{width:"80px" ,height:"25px",marginLeft: "-20px",color: " #18d26e"}}/>
           <h1>Location</h1>
           <p>Jamshedpur,Jharkhand</p>
         </div>
         <div>
-        <FaPhone style={{width:"80px" ,height:"25px",marginLeft: "-20px",color: " #18d26e"}}/>
+        <FaPhone className="icon1" style={{width:"80px" ,height:"25px",marginLeft: "-20px",color: " #18d26e"}}/>
           <h1>Phone</h1>
           <p>(+91) 7098822766</p>
         </div>
         <div>
-        <GrMail style={{width:"80px" ,height:"25px",marginLeft: "-20px",color: " #18d26e"}}/>
+        <GrMail className="icon1" style={{width:"80px" ,height:"25px",marginLeft: "-20px",color: " #18d26e"}}/>
           <h1>Email</h1>
           <p>mahatoabhishek123@gmail.com</p>
         </div>

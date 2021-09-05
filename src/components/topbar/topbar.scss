@@ -24,16 +24,27 @@
 
       .logoImg{
         width: 160px;
+        
+        @media (max-width: 1000px){
+          margin-left: -55px;
+          margin-right: -42px;
+          width: 140px;
+        }
+       
       }
+      
       .logoImg>img{
         width: 100%;
+
+        @media (max-width: 1000px){
+          margin-top: 10px;
+        }
       }
       .logo {
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
         color: inherit;
-        margin-right: 40px;
       }
 
       .itemContainer {
@@ -42,7 +53,7 @@
         margin-left: 30px;
         color: white;
 
-        @include mobile{
+        @media (max-width: 1240px){
           display: none;
         }
 
@@ -73,8 +84,24 @@
         margin-right: 10px;
         color: white;
 
+        @media (max-width: 760px){
+          display: none;
+        }
+
+        .icon1{
+          margin-left: 10;
+          color: #18d26e;
+
+          @media (max-width: 480px){
+            display: none;
+          }
+        }
         #last{
           margin-right: 40px;
+
+          @media (max-width: 644px){
+            margin-right: 0px;
+          }
         }
         a{
           color: white;
@@ -82,8 +109,12 @@
 
         }
         
-        @include mobile{
-          display: none;
+        @media (max-width: 1000px){
+          margin-right: 1px;
+          margin-top: 10px;
+        }
+        @media (max-width: 644px){
+          font-size: 11px;
         }
       }
 
