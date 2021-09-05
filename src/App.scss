@@ -13,6 +13,7 @@
       &::-webkit-scrollbar{
           display: none;
       }
+
       overflow-x: hidden;
 
       > *{
@@ -20,5 +21,6 @@
           height: calc(98vh);
           scroll-snap-align: start;
       }
+      
   }
 }
