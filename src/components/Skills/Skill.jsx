@@ -96,7 +96,7 @@ export default function Skill() {
             
             <div className="types">
             {d.img.map((item) => (
-              <div>
+              <div key={uuidv4()}>
                 <img src={item.url} />
                 <h1>{item.title1}</h1>
               </div>

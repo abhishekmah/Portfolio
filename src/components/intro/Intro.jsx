@@ -2,6 +2,8 @@ import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import { GrLinkedin } from "react-icons/gr";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function Intro() {
   const textRef = useRef();
@@ -30,10 +32,11 @@ export default function Intro() {
           <h3>
              <span ref={textRef}></span>
           </h3>
+          <br />
           <div className="contact">
-            <a href=""><GrLinkedin /></a>
-            <a href=""><img src="" /></a>
-            <a href=""><img src="" /></a>
+            <a href=""><FaGithub className="icon"/></a>
+            <a href=""><FaTwitterSquare className="icon"/></a>
+            <a href=""><GrLinkedin className="icon"/></a>
           </div>
         </div>
       </div>
