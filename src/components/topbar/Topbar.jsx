@@ -23,7 +23,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer1"><a href="#Project">PROJECT</a></div>
           <div className="itemContainer1"><a href="#skill">SKILL</a></div>
           <div className="itemContainer1"><a href="#contact">CONTACT</a></div>
-          <div className="itemContainer1" id="lastDiv"><a href="" id="last">RESUME <FaDownload className="icon1"/></a></div>
+          <div className="itemContainer1" id="lastDiv"><a href="https://drive.google.com/file/d/1xY6acEeGnhMHPp5lDKdMqfpBEFE89jp0/view?usp=sharing" id="last">RESUME <FaDownload className="icon1"/></a></div>
           
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
