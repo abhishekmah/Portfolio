@@ -124,11 +124,10 @@ export default function Project() {
     <div className="Project" id="Project">
       <br />
       <br />
-      <br />
       <h1>My Projects</h1>
       <hr style={{width: 180, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
 
-      <Slider autoplay={true} slidesToShow={2} centerMode={true} autoplayScroll={1} centerPadding={-70} arrows={false}>
+      <Slider autoplay={true} slidesToShow={2} centerMode={true} autoplayScroll={1} centerPadding={-60} arrows={false}>
         {data.map((d) => (
           <div key={uuidv4()} className="container">
             <div className="item">

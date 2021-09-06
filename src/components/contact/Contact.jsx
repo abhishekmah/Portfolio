@@ -23,8 +23,6 @@ export default function Contact() {
         <br />
         <p>Let's get in touch and build something together.</p>
         <br />
-        <br />
-        <br />
         <div className="contactMain">
         <div className="div1">
         <FaHome className="icon1" style={{width:"80px" ,height:"25px",marginLeft: "-20px",color: " #18d26e"}}/>
@@ -58,9 +56,7 @@ export default function Contact() {
         </form>
       </div>
       </div>
-      <br />
-      <br />
-      <br />
+      
       <div className="footer">
         <p style={{marginTop: 5}}>Created By <span>Abhishek</span> | © 2021 All rights reserved</p>
       </div>

@@ -34,9 +34,9 @@ export default function Intro() {
           </h3>
           <br />
           <div className="contact">
-            <a href=""><FaGithub className="icon"/></a>
-            <a href=""><FaTwitterSquare className="icon"/></a>
-            <a href=""><GrLinkedin className="icon"/></a>
+            <a href="https://github.com/abhishekmah"><FaGithub className="icon"/></a>
+            <a href="https://twitter.com/honest_Coder"><FaTwitterSquare className="icon"/></a>
+            <a href="https://www.linkedin.com/in/abhishekmah/"><GrLinkedin className="icon"/></a>
           </div>
         </div>
       </div>
