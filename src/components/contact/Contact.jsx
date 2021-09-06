@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import "./contact.scss";
 import { FaHome } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
 
+  useEffect(() => {
+    Aos.init({ duration: 1200});
+  })
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(true);
@@ -14,13 +19,13 @@ export default function Contact() {
   return (
     <div id="contact">
     <br />
-    <br />
-     <h1 style={{textAlign: "center", color: "white"}}>Contact Me</h1>
+     <h1 style={{textAlign: "center", color: "white"}} >Contact Me</h1>
      <hr style={{width: 150, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
       <div className="contact">
       <div className="left">
         <br />
-        <p>Let's get in touch and build something together.</p>
+        <p >Let's get in touch and build something together.</p>
+        <br />
         <br />
         <br />
         <div className="contactMain">
@@ -56,7 +61,8 @@ export default function Contact() {
         </form>
       </div>
       </div>
-      
+      <br />
+      <br />
       <div className="footer">
         <p style={{marginTop: 5}}>Created By <span>Abhishek</span> | © 2021 All rights reserved</p>
       </div>

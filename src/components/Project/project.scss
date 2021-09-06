@@ -2,10 +2,7 @@
 
 .Project {
   background-color: black;
-  // display: flex;
   align-items: center;
-  // justify-content: center;
-  // position: relative;
 
   h1{
     font-size: 40px;
@@ -26,14 +23,6 @@
         transform: scale(1.1);
     }
 
-    @media (max-width: 1320px){
-      width: 40vw;
-    }
-
-    @media (max-width: 780px){
-      width: 25vw;
-     }
-
     @include mobile {
       flex-direction: column;
     }
@@ -47,11 +36,26 @@
         align-items: center;
         justify-content: center;
 
-        @include mobile {
-          width: 80%;
-          height: 150px;
-          margin: 15px 0;
+        @media (max-width: 1370px){
+          width: 500px;
         }
+        @media (max-width: 950px){
+          width: 400px;
+          height: 80%;
+        }
+        @media (max-width: 740px){
+          width: 350px;
+          height: 85%;
+        }
+        @media (max-width: 630px){
+          width: 250px;
+          height: 90%;
+        }
+        @media (max-width: 425px){
+          width: 200px;
+          height: 96%;
+        }
+
 
         .left {
           flex: 4;
@@ -80,18 +84,18 @@
               align-items: center;
               justify-content: center;
 
-              @media (max-width: 770px){
-                display: none;
-               }
+              // @media (max-width: 770px){
+              //   display: none;
+              //  }
 
               img {
                 width: 150%;
                 height: 50px;
                 border-radius: 50%;
 
-                @include mobile {
-                  width: 15px;
-                }
+                // @include mobile {
+                //   width: 15px;
+                // }
               }
             }
             h2 {
@@ -101,14 +105,14 @@
                 width: 20vw;
                 margin-top: 40px;
                }
-
+               @media (max-width: 425px){
+                margin-top: -5px;
+              }
             }
             p {
               font-size: 17px;
               margin-top: -8px;
-              @include mobile{
-                display: none;
-              }
+              
             }
             .button {
               display: flex;

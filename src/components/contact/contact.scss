@@ -1,7 +1,6 @@
 @import "../../global.scss";
 #contact{
   background-color: black;
-  // margin-top: 120px;
 }
 .footer{
   width: 100%;
@@ -11,7 +10,7 @@
   background-color: white;
 
   @media (max-width: 1240px) {
-    margin-top: -20px;
+    margin-top: -26px;
   }
   p{
     margin-top: 10px;
@@ -96,6 +95,10 @@
         text-align: left;
         font-size: 30px;
         font-weight: 400;
+
+        @media (max-width: 800px){
+          font-size: 24px;
+        }
       }
     }
   }

@@ -123,10 +123,10 @@ export default function Project() {
   return (
     <div className="Project" id="Project">
       <br />
-      <br />
+      
       <h1>My Projects</h1>
       <hr style={{width: 180, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
-
+      <br />
       <Slider autoplay={true} slidesToShow={2} centerMode={true} autoplayScroll={1} centerPadding={-60} arrows={false}>
         {data.map((d) => (
           <div key={uuidv4()} className="container">
@@ -139,15 +139,15 @@ export default function Project() {
                   <h2 style={{color: "crimson"}}>{d.title}</h2>
                   <p>{d.desc}</p>
                   <div className="button">
-                  <a href= {d.linkBlog} style=
+                  <a href= {d.linkBlog} target="blank" style=
                   {{textDecoration: "none", color: "white"}}><button>Blog</button></a>
-                  <a href= {d.linkGithub} style=
+                  <a href= {d.linkGithub} target="blank" style=
                   {{textDecoration: "none", color: "white"}}><button style={{marginLeft: 10}}>Github</button></a>
                   </div>
                 </div>
               </div>
               <div className="right">
-                <a href={d.linkSite}><div><img src={d.img} alt=""/></div></a>
+                <a href={d.linkSite} target="blank"><div><img src={d.img} alt=""/></div></a>
               </div>
             </div>
           </div>
