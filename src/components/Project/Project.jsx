@@ -37,7 +37,7 @@ export default function Project() {
       icon: "myglamm-logo.png",
       linkSite: "https://myglammclone.netlify.app",
       linkGithub: "https://github.com/tauseef-stack/myGlamm",
-      linkBlog: "",
+      linkBlog: "https://medium.com/@mahatoabhishek123/myglamm-com-a-cloned-version-703f06e7e9cf",
       title: "My Glamm",
       desc:
         "MyGlamm is a direct-to-consumer beauty brand that offers an online beauty products marketplace.",
@@ -73,7 +73,7 @@ export default function Project() {
       icon: "myglamm-logo.png",
       linkSite: "https://myglammclone.netlify.app",
       linkGithub: "https://github.com/tauseef-stack/myGlamm",
-      linkBlog: "",
+      linkBlog: "https://medium.com/@mahatoabhishek123/myglamm-com-a-cloned-version-703f06e7e9cf",
       title: "My Glamm",
       desc:
         "MyGlamm is a direct-to-consumer beauty brand that offers an online beauty products marketplace.",
@@ -109,7 +109,7 @@ export default function Project() {
       icon: "myglamm-logo.png",
       linkSite: "https://myglammclone.netlify.app",
       linkGithub: "https://github.com/tauseef-stack/myGlamm",
-      linkBlog: "",
+      linkBlog: "https://medium.com/@mahatoabhishek123/myglamm-com-a-cloned-version-703f06e7e9cf",
       title: "My Glamm",
       desc:
         "MyGlamm is a direct-to-consumer beauty brand that offers an online beauty products marketplace.",
@@ -127,7 +127,7 @@ export default function Project() {
       <h1>My Projects</h1>
       <hr style={{width: 180, marginTop: "-18px",height: 4, backgroundColor: "#18d26e", border: "none"}}/>
       <br />
-      <Slider autoplay={true} slidesToShow={2} centerMode={true} autoplayScroll={1} centerPadding={-60} arrows={false}>
+      <Slider autoplay={true} slidesToShow={2} centerMode={true} autoplayScroll={1} centerPadding={-60} arrows={true}>
         {data.map((d) => (
           <div key={uuidv4()} className="container">
             <div className="item">
